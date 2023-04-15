@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.excelBTN {
+    width: 25px;
+}
+
+.excelBTN:hover {
+    transform: translateY(1px);
+}
+
+.excelBTN:active {
+    transform: translateY(2px);
+}
+
+.iconContainer {
+    position: fixed;
+    top: 18%;
+    left: 96%;
+    z-index: 3;
+}
+
+
+#popUpWindow {
+    /* Border Design  */
+    border: 4px outset rgba(28, 110, 164, 0.61);
+    border-radius: 12px 12px 12px 12px;
+
+    /* Dialog Box CSS */
+    position: absolute;
+    width: 427px;
+    height: 285px;
+    top: 35% !important;
+    left: 35% !important;
+    background: white;
+    z-index: 4;
+}
+
+#vizContainer_disabled {
+    background: rgba(161, 149, 149, 0.397);
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    z-index: 3;
+}
+
+.dialog-top {
+    background: #00adff;
+    color: white;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 28px;
+    font-weight: 600;
+    /* font-family: auto; */
+    font-size: 16px;
+}
+
+div#vizContainer,
+iframe {
+    position: fixed;
+    z-index: 2;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+/***** Alert Box *****/
+.alert_box {
+    padding: 20px;
+    background-color: #cd730d;
+    color: white;
+    z-index: 5;
+    width: 450px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    border-style: ridge;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.closebtn:hover {
+    color: black;
+}

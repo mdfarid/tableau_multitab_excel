@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="headerContainer">
+    <title> Export Framework Release 0.5 </title>
+    <link rel="stylesheet" href="tableau.css">
+    <script src="tableau.js"></script>
+</head>
+<body>    
+<!-- PoP Up Container -->
+<div id="popUpWindow" style="visibility:hidden;">
+    <div class="dialog-top">&nbsp&nbspDownload Dialog</div>
+    <div style='width:200px;margin-top:10px;margin-left:10px'>
+        <label id='downloadStatus'>Status : Initialising download </label>
+        <progress style='margin-top:5px;margin-bottom:5px;' id='_progressBar' value='' max='100' radeon>
+        </progress>
+        <textarea id='downloadDetails' style='width:400px;height:150px' readonly></textarea>
+        <input type='button' style='margin-top:10px;margin-bottom:50px;' id='closeWindow' value='Close Window' />
+    </div>
+</div>
+
+
+<!-- Alert Box Dialog box -->
+<div class="alert_box" id="alert_box" style="visibility:hidden;">
+    <span class="closebtn" id="closebutton">&times;</span>
+    <div id='error_msg'></div>
+</div>
+
+
+<!-- Report Container -->
+<div id="vizContainer_disabled" style="visibility:hidden;"></div>
+<div id="vizContainer" style="width:1155px; height:592px;"></div>
+<div id="dataTarget"></div>
+</body>
+</html>
